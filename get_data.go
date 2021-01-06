@@ -23,11 +23,11 @@ func GetClusterData(username, password, url string) (*ClusterData, error) {
 		url = "127.0.0.1:8091"
 	}
 
-	var output *ClusterData
+	var output ClusterData
 
-	err := getData(username, password, fmt.Sprintf("%s/pools/default", url), output)
+	err := getData(username, password, fmt.Sprintf("%s/pools/default", url), &output)
 
-	return output, err
+	return &output, err
 }
 
 func getData(username, password, url string, ptr interface{}) error {
