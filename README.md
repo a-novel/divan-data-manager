@@ -32,3 +32,7 @@ func main() {
     }
 }
 ```
+
+# License
+
+[Licensed under MIT, for A-Novel](https://github.com/a-novel/divan-bucket-manager/blob/master/LICENSE).
