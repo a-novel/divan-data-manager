@@ -8,5 +8,5 @@ type BasicStats struct {
 	ItemCount              int     `json:"itemCount"`
 	DiskUsed               int     `json:"diskUsed"`
 	DataUsed               int     `json:"dataUsed"`
-	MemUsed                uint64  `json:"memUsed"`
+	MemUsed                uint    `json:"memUsed"`
 }

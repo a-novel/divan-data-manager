@@ -30,7 +30,6 @@ func GetClusterData(username, password, url string) (*ClusterData, error) {
 	return output, err
 }
 
-
 func getData(username, password, url string, ptr interface{}) error {
 	cmd := exec.Command(
 		"sh", "-c",

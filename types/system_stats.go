@@ -9,5 +9,5 @@ type SystemStats struct {
 	MemFree            uint    `json:"mem_free"`
 	MemLimit           uint    `json:"mem_limit"`
 	CpuCoresAvailable  uint    `json:"cpu_cores_available"`
-	AllocStall         uint64  `json:"allocstall"`
+	AllocStall         uint    `json:"allocstall"`
 }
