@@ -14,7 +14,7 @@ type ClusterData struct {
 	RebalanceProgressUri    string                         `json:"rebalanceProgressUri"`
 	StopRebalanceUri        string                         `json:"stopRebalanceUri"`
 	NodeStatusesUri         string                         `json:"nodeStatusesUri"`
-	MaxBucketCount          uint                           `json:"maxBucketCount"`
+	MaxBucketCount          uint64                           `json:"maxBucketCount"`
 	Tasks                   divan_types.Tasks              `json:"tasks"`
 	Counters                divan_types.Counters           `json:"counters"`
 	IndexStatusURI          string                         `json:"indexStatusURI"`
@@ -22,11 +22,11 @@ type ClusterData struct {
 	ServerGroupsUri         string                         `json:"serverGroupsUri"`
 	ClusterName             string                         `json:"clusterName"`
 	Balanced                bool                           `json:"balanced"`
-	MemoryQuota             uint                           `json:"memoryQuota"`
-	IndexMemoryQuota        uint                           `json:"indexMemoryQuota"`
-	FtsMemoryQuota          uint                           `json:"ftsMemoryQuota"`
-	CbasMemoryQuota         uint                           `json:"cbasMemoryQuota"`
-	EventingMemoryQuota     uint                           `json:"eventingMemoryQuota"`
+	MemoryQuota             uint64                           `json:"memoryQuota"`
+	IndexMemoryQuota        uint64                           `json:"indexMemoryQuota"`
+	FtsMemoryQuota          uint64                           `json:"ftsMemoryQuota"`
+	CbasMemoryQuota         uint64                           `json:"cbasMemoryQuota"`
+	EventingMemoryQuota     uint64                           `json:"eventingMemoryQuota"`
 	AutoCompactionSettings  interface{}                    `json:"autoCompactionSettings"`
 	FastWarmupSettings      divan_types.FastWarmupSettings `json:"fastWarmupSettings"`
 	VisualSettingsUri       string                         `json:"visualSettingsUri"`

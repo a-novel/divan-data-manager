@@ -1,6 +1,6 @@
 package divan_types
 
 type Quota struct {
-	Ram    uint `json:"ram"`
-	RawRAM uint `json:"rawRAM"`
+	Ram    uint64 `json:"ram"`
+	RawRAM uint64 `json:"rawRAM"`
 }

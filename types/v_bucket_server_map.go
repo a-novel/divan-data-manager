@@ -2,7 +2,7 @@ package divan_types
 
 type VBucketServerMap struct {
 	HashAlgorithm string   `json:"hashAlgorithm"`
-	NumReplicas   uint     `json:"numReplicas"`
+	NumReplicas   uint64     `json:"numReplicas"`
 	ServerList    []string `json:"serverList"`
-	VBucketMap    [][]uint `json:"vBucketMap"`
+	VBucketMap    [][]uint64 `json:"vBucketMap"`
 }

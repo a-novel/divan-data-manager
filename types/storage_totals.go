@@ -6,19 +6,19 @@ type StorageTotals struct {
 }
 
 type RamStorage struct {
-	Total             uint `json:"total"`
-	QuotaTotal        uint `json:"quotaTotal"`
-	QuotaUsed         uint `json:"quotaUsed"`
-	Used              uint `json:"used"`
-	UsedByData        uint `json:"usedByData"`
-	QuotaUsedPerNode  uint `json:"quotaUsedPerNode"`
-	QuotaTotalPerNode uint `json:"quotaTotalPerNode"`
+	Total             uint64 `json:"total"`
+	QuotaTotal        uint64 `json:"quotaTotal"`
+	QuotaUsed         uint64 `json:"quotaUsed"`
+	Used              uint64 `json:"used"`
+	UsedByData        uint64 `json:"usedByData"`
+	QuotaUsedPerNode  uint64 `json:"quotaUsedPerNode"`
+	QuotaTotalPerNode uint64 `json:"quotaTotalPerNode"`
 }
 
 type HDDStorage struct {
-	Total      uint `json:"total"`
-	QuotaTotal uint `json:"quotaTotal"`
-	Used       uint `json:"used"`
-	UsedByData uint `json:"usedByData"`
-	Free       uint `json:"free"`
+	Total      uint64 `json:"total"`
+	QuotaTotal uint64 `json:"quotaTotal"`
+	Used       uint64 `json:"used"`
+	UsedByData uint64 `json:"usedByData"`
+	Free       uint64 `json:"free"`
 }

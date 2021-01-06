@@ -16,10 +16,10 @@ func (acs *AutoCompactionSettings) Parse() {
 }
 
 type AutoCompactionTimePeriod struct {
-	FromHour     uint `json:"fromHour"`
-	FromMinute   uint `json:"fromMinute"`
-	ToHour       uint `json:"toHour"`
-	ToMinute     uint `json:"toMinute"`
+	FromHour     uint64 `json:"fromHour"`
+	FromMinute   uint64 `json:"fromMinute"`
+	ToHour       uint64 `json:"toHour"`
+	ToMinute     uint64 `json:"toMinute"`
 	AbortOutside bool `json:"abortOutside"`
 }
 
@@ -29,19 +29,19 @@ type Threshold struct {
 }
 
 type ThresholdD struct {
-	Percentage uint `json:"percentage"`
-	Size       uint `json:"size"`
+	Percentage uint64 `json:"percentage"`
+	Size       uint64 `json:"size"`
 }
 
 func (t *Threshold) Determine() *ThresholdD {
 	var output ThresholdD
 
 	if fval, ok := t.Percentage.(float64); ok {
-		output.Percentage = uint(fval)
+		output.Percentage = uint64(fval)
 	}
 
 	if fval, ok := t.Size.(float64); ok {
-		output.Size = uint(fval)
+		output.Size = uint64(fval)
 	}
 
 	return &output

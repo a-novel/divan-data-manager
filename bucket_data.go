@@ -18,8 +18,8 @@ type BucketData struct {
 	SaslPassword            string                       `json:"saslPassword"`
 	PurgeInterval           float64                      `json:"purgeInterval"`
 	VBucketServerMap        divan_types.VBucketServerMap `json:"vBucketServerMap"`
-	ReplicaNumber           uint                         `json:"replicaNumber"`
-	ThreadsNumber           uint                         `json:"threadsNumber"`
+	ReplicaNumber           uint64                         `json:"replicaNumber"`
+	ThreadsNumber           uint64                         `json:"threadsNumber"`
 	Quota                   divan_types.Quota            `json:"quota"`
 	EvictionPolicy          string                       `json:"evictionPolicy"`
 	DurabilityMinLevel      string                       `json:"durabilityMinLevel"`
