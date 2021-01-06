@@ -3,7 +3,7 @@
 Lightweight api to manage bucket information from Go server.
 
 ```cgo
-go get github.com/a-novel/divan-bucket-manager
+go get github.com/a-novel/divan-bucket-manager@v0.1.0
 ```
 
 # Usage
