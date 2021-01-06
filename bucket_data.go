@@ -1,6 +1,6 @@
-package divan_bucket_manager
+package divan_data_manager
 
-import "github.com/a-novel/divan-bucket-manager/types"
+import "github.com/a-novel/divan-data-manager/types"
 
 type BucketData struct {
 	Name                    string                       `json:"name"`

@@ -1,3 +1,3 @@
-module github.com/a-novel/divan-bucket-manager
+module github.com/a-novel/divan-data-manager
 
 go 1.15

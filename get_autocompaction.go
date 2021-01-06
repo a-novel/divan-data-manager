@@ -1,8 +1,8 @@
-package divan_bucket_manager
+package divan_data_manager
 
 import (
 	"encoding/json"
-	"github.com/a-novel/divan-bucket-manager/types"
+	"github.com/a-novel/divan-data-manager/types"
 )
 
 func (bd *BucketData) GetAutocompaction() error {
