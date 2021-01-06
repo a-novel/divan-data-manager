@@ -3,7 +3,7 @@
 Lightweight api to manage couchbase information from Go server.
 
 ```cgo
-go get github.com/a-novel/divan-data-manager@v0.2.2
+go get github.com/a-novel/divan-data-manager@v0.2.3
 ```
 
 # Usage

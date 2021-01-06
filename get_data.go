@@ -13,7 +13,7 @@ func GetBucketsData(username, password, url string) ([]*BucketData, error) {
 
 	var output []*BucketData
 
-	err := getData(username, password, fmt.Sprintf("%s/pools/default/buckets", url), output)
+	err := getData(username, password, fmt.Sprintf("%s/pools/default/buckets", url), &output)
 
 	return output, err
 }
