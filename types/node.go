@@ -17,7 +17,7 @@ type Node struct {
 	ThisNode             bool               `json:"thisNode"`
 	Hostname             string             `json:"hostname"`
 	NodeUUID             string             `json:"nodeUUID"`
-	ClusterCompatibility string             `json:"clusterCompatibility"`
+	ClusterCompatibility uint64             `json:"clusterCompatibility"`
 	Version              string             `json:"version"`
 	Os                   string             `json:"os"`
 	CpuCount             uint64               `json:"cpuCount"`
