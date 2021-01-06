@@ -1,0 +1,951 @@
+[
+  {
+    "name": "Beta",
+    "uuid": "9342c61dee6d5c79d188f960d777913f",
+    "bucketType": "ephemeral",
+    "authType": "sasl",
+    "uri": "/pools/default/buckets/Beta?bucket_uuid=9342c61dee6d5c79d188f960d777913f",
+    "streamingUri": "/pools/default/bucketsStreaming/Beta?bucket_uuid=9342c61dee6d5c79d188f960d777913f",
+    "localRandomKeyUri": "/pools/default/buckets/Beta/localRandomKey",
+    "controllers": {
+      "compactAll": "/pools/default/buckets/Beta/controller/compactBucket",
+      "compactDB": "/pools/default/buckets/Beta/controller/compactDatabases",
+      "purgeDeletes": "/pools/default/buckets/Beta/controller/unsafePurgeBucket",
+      "startRecovery": "/pools/default/buckets/Beta/controller/startRecovery"
+    },
+    "nodes": [
+      {
+        "couchApiBase": "http://127.0.0.1:8092/Beta%2B9342c61dee6d5c79d188f960d777913f",
+        "systemStats": {
+          "cpu_utilization_rate": 6.429463171036205,
+          "cpu_stolen_rate": 0,
+          "swap_total": 0,
+          "swap_used": 0,
+          "mem_total": 34359738368,
+          "mem_free": 15834963968,
+          "mem_limit": 34359738368,
+          "cpu_cores_available": 16,
+          "allocstall": 18446744073709551615
+        },
+        "interestingStats": {
+          "cmd_get": 0,
+          "couch_docs_actual_disk_size": 585978,
+          "couch_docs_data_size": 530176,
+          "couch_spatial_data_size": 0,
+          "couch_spatial_disk_size": 0,
+          "couch_views_actual_disk_size": 0,
+          "couch_views_data_size": 0,
+          "curr_items": 0,
+          "curr_items_tot": 0,
+          "ep_bg_fetched": 0,
+          "get_hits": 0,
+          "mem_used": 17565504,
+          "ops": 0,
+          "vb_active_num_non_resident": 0,
+          "vb_replica_curr_items": 0
+        },
+        "uptime": "6782",
+        "memoryTotal": 34359738368,
+        "memoryFree": 15834963968,
+        "mcdMemoryReserved": 26214,
+        "mcdMemoryAllocated": 26214,
+        "replication": 0,
+        "clusterMembership": "active",
+        "recoveryType": "none",
+        "status": "healthy",
+        "otpNode": "ns_1@cb.local",
+        "thisNode": true,
+        "hostname": "127.0.0.1:8091",
+        "nodeUUID": "21df9a3d57d0af204e3c1e3bf53d0c74",
+        "clusterCompatibility": 393222,
+        "version": "6.6.0-7909-community",
+        "os": "x86_64-apple-darwin17.7.0",
+        "cpuCount": 16,
+        "ports": {
+          "direct": 11210,
+          "distTCP": 21100,
+          "distTLS": 21150
+        },
+        "services": [
+          "fts",
+          "index",
+          "kv",
+          "n1ql"
+        ],
+        "nodeEncryption": false,
+        "configuredHostname": "127.0.0.1:8091",
+        "addressFamily": "inet",
+        "externalListeners": [
+          {
+            "afamily": "inet",
+            "nodeEncryption": false
+          },
+          {
+            "afamily": "inet6",
+            "nodeEncryption": false
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "uri": "/pools/default/buckets/Beta/stats",
+      "directoryURI": "/pools/default/buckets/Beta/statsDirectory",
+      "nodeStatsListURI": "/pools/default/buckets/Beta/nodes"
+    },
+    "nodeLocator": "vbucket",
+    "saslPassword": "3c05bf22898fb5e1c2627195a9de0270",
+    "purgeInterval": 3,
+    "vBucketServerMap": {
+      "hashAlgorithm": "CRC",
+      "numReplicas": 1,
+      "serverList": [
+        "127.0.0.1:11210"
+      ],
+      "vBucketMap": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ]
+      ]
+    },
+    "replicaNumber": 1,
+    "threadsNumber": 3,
+    "quota": {
+      "ram": 2147483648,
+      "rawRAM": 2147483648
+    },
+    "basicStats": {
+      "quotaPercentUsed": 0.2448350191116333,
+      "opsPerSec": 0,
+      "diskFetches": 0,
+      "itemCount": 0,
+      "diskUsed": 34,
+      "dataUsed": 0,
+      "memUsed": 5257792,
+      "vbActiveNumNonResident": 0
+    },
+    "evictionPolicy": "noEviction",
+    "durabilityMinLevel": "none",
+    "conflictResolutionType": "seqno",
+    "bucketCapabilitiesVer": "",
+    "bucketCapabilities": [
+      "durableWrite",
+      "tombstonedUserXAttrs",
+      "dcp",
+      "cbhello",
+      "touch",
+      "cccp",
+      "xdcrCheckpointing",
+      "nodesExt",
+      "xattr"
+    ]
+  },
+  {
+    "name": "Hola",
+    "uuid": "976ef26171c7e763bc997ba3adf89bfa",
+    "bucketType": "membase",
+    "authType": "sasl",
+    "uri": "/pools/default/buckets/Hola?bucket_uuid=976ef26171c7e763bc997ba3adf89bfa",
+    "streamingUri": "/pools/default/bucketsStreaming/Hola?bucket_uuid=976ef26171c7e763bc997ba3adf89bfa",
+    "localRandomKeyUri": "/pools/default/buckets/Hola/localRandomKey",
+    "controllers": {
+      "compactAll": "/pools/default/buckets/Hola/controller/compactBucket",
+      "compactDB": "/pools/default/buckets/Hola/controller/compactDatabases",
+      "purgeDeletes": "/pools/default/buckets/Hola/controller/unsafePurgeBucket",
+      "startRecovery": "/pools/default/buckets/Hola/controller/startRecovery"
+    },
+    "nodes": [
+      {
+        "couchApiBase": "http://127.0.0.1:8092/Hola%2B976ef26171c7e763bc997ba3adf89bfa",
+        "systemStats": {
+          "cpu_utilization_rate": 6.429463171036205,
+          "cpu_stolen_rate": 0,
+          "swap_total": 0,
+          "swap_used": 0,
+          "mem_total": 34359738368,
+          "mem_free": 15834963968,
+          "mem_limit": 34359738368,
+          "cpu_cores_available": 16,
+          "allocstall": 18446744073709551615
+        },
+        "interestingStats": {
+          "cmd_get": 0,
+          "couch_docs_actual_disk_size": 585978,
+          "couch_docs_data_size": 530176,
+          "couch_spatial_data_size": 0,
+          "couch_spatial_disk_size": 0,
+          "couch_views_actual_disk_size": 0,
+          "couch_views_data_size": 0,
+          "curr_items": 0,
+          "curr_items_tot": 0,
+          "ep_bg_fetched": 0,
+          "get_hits": 0,
+          "mem_used": 17565504,
+          "ops": 0,
+          "vb_active_num_non_resident": 0,
+          "vb_replica_curr_items": 0
+        },
+        "uptime": "6782",
+        "memoryTotal": 34359738368,
+        "memoryFree": 15834963968,
+        "mcdMemoryReserved": 26214,
+        "mcdMemoryAllocated": 26214,
+        "replication": 0,
+        "clusterMembership": "active",
+        "recoveryType": "none",
+        "status": "healthy",
+        "otpNode": "ns_1@cb.local",
+        "thisNode": true,
+        "hostname": "127.0.0.1:8091",
+        "nodeUUID": "21df9a3d57d0af204e3c1e3bf53d0c74",
+        "clusterCompatibility": 393222,
+        "version": "6.6.0-7909-community",
+        "os": "x86_64-apple-darwin17.7.0",
+        "cpuCount": 16,
+        "ports": {
+          "direct": 11210,
+          "distTCP": 21100,
+          "distTLS": 21150
+        },
+        "services": [
+          "fts",
+          "index",
+          "kv",
+          "n1ql"
+        ],
+        "nodeEncryption": false,
+        "configuredHostname": "127.0.0.1:8091",
+        "addressFamily": "inet",
+        "externalListeners": [
+          {
+            "afamily": "inet",
+            "nodeEncryption": false
+          },
+          {
+            "afamily": "inet6",
+            "nodeEncryption": false
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "uri": "/pools/default/buckets/Hola/stats",
+      "directoryURI": "/pools/default/buckets/Hola/statsDirectory",
+      "nodeStatsListURI": "/pools/default/buckets/Hola/nodes"
+    },
+    "nodeLocator": "vbucket",
+    "saslPassword": "45fa387939af0a7a39a1f379ae6904d0",
+    "ddocs": {
+      "uri": "/pools/default/buckets/Hola/ddocs"
+    },
+    "replicaIndex": false,
+    "autoCompactionSettings": false,
+    "vBucketServerMap": {
+      "hashAlgorithm": "CRC",
+      "numReplicas": 1,
+      "serverList": [
+        "127.0.0.1:11210"
+      ],
+      "vBucketMap": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ]
+      ]
+    },
+    "replicaNumber": 1,
+    "threadsNumber": 3,
+    "quota": {
+      "ram": 1073741824,
+      "rawRAM": 1073741824
+    },
+    "basicStats": {
+      "quotaPercentUsed": 0.5731523036956787,
+      "opsPerSec": 0,
+      "diskFetches": 0,
+      "itemCount": 0,
+      "diskUsed": 292974,
+      "dataUsed": 265088,
+      "memUsed": 6154176,
+      "vbActiveNumNonResident": 0
+    },
+    "evictionPolicy": "valueOnly",
+    "durabilityMinLevel": "none",
+    "conflictResolutionType": "seqno",
+    "bucketCapabilitiesVer": "",
+    "bucketCapabilities": [
+      "durableWrite",
+      "tombstonedUserXAttrs",
+      "couchapi",
+      "dcp",
+      "cbhello",
+      "touch",
+      "cccp",
+      "xdcrCheckpointing",
+      "nodesExt",
+      "xattr"
+    ]
+  },
+  {
+    "name": "cc",
+    "uuid": "017983434bc6331c1f93860f71414225",
+    "bucketType": "membase",
+    "authType": "sasl",
+    "uri": "/pools/default/buckets/cc?bucket_uuid=017983434bc6331c1f93860f71414225",
+    "streamingUri": "/pools/default/bucketsStreaming/cc?bucket_uuid=017983434bc6331c1f93860f71414225",
+    "localRandomKeyUri": "/pools/default/buckets/cc/localRandomKey",
+    "controllers": {
+      "compactAll": "/pools/default/buckets/cc/controller/compactBucket",
+      "compactDB": "/pools/default/buckets/cc/controller/compactDatabases",
+      "purgeDeletes": "/pools/default/buckets/cc/controller/unsafePurgeBucket",
+      "startRecovery": "/pools/default/buckets/cc/controller/startRecovery"
+    },
+    "nodes": [
+      {
+        "couchApiBase": "http://127.0.0.1:8092/cc%2B017983434bc6331c1f93860f71414225",
+        "systemStats": {
+          "cpu_utilization_rate": 6.429463171036205,
+          "cpu_stolen_rate": 0,
+          "swap_total": 0,
+          "swap_used": 0,
+          "mem_total": 34359738368,
+          "mem_free": 15834963968,
+          "mem_limit": 34359738368,
+          "cpu_cores_available": 16,
+          "allocstall": 18446744073709551615
+        },
+        "interestingStats": {
+          "cmd_get": 0,
+          "couch_docs_actual_disk_size": 585978,
+          "couch_docs_data_size": 530176,
+          "couch_spatial_data_size": 0,
+          "couch_spatial_disk_size": 0,
+          "couch_views_actual_disk_size": 0,
+          "couch_views_data_size": 0,
+          "curr_items": 0,
+          "curr_items_tot": 0,
+          "ep_bg_fetched": 0,
+          "get_hits": 0,
+          "mem_used": 17565504,
+          "ops": 0,
+          "vb_active_num_non_resident": 0,
+          "vb_replica_curr_items": 0
+        },
+        "uptime": "6782",
+        "memoryTotal": 34359738368,
+        "memoryFree": 15834963968,
+        "mcdMemoryReserved": 26214,
+        "mcdMemoryAllocated": 26214,
+        "replication": 0,
+        "clusterMembership": "active",
+        "recoveryType": "none",
+        "status": "healthy",
+        "otpNode": "ns_1@cb.local",
+        "thisNode": true,
+        "hostname": "127.0.0.1:8091",
+        "nodeUUID": "21df9a3d57d0af204e3c1e3bf53d0c74",
+        "clusterCompatibility": 393222,
+        "version": "6.6.0-7909-community",
+        "os": "x86_64-apple-darwin17.7.0",
+        "cpuCount": 16,
+        "ports": {
+          "direct": 11210,
+          "distTCP": 21100,
+          "distTLS": 21150
+        },
+        "services": [
+          "fts",
+          "index",
+          "kv",
+          "n1ql"
+        ],
+        "nodeEncryption": false,
+        "configuredHostname": "127.0.0.1:8091",
+        "addressFamily": "inet",
+        "externalListeners": [
+          {
+            "afamily": "inet",
+            "nodeEncryption": false
+          },
+          {
+            "afamily": "inet6",
+            "nodeEncryption": false
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "uri": "/pools/default/buckets/cc/stats",
+      "directoryURI": "/pools/default/buckets/cc/statsDirectory",
+      "nodeStatsListURI": "/pools/default/buckets/cc/nodes"
+    },
+    "nodeLocator": "vbucket",
+    "saslPassword": "33294dbf645940f1e7232a7a4ab1acde",
+    "ddocs": {
+      "uri": "/pools/default/buckets/cc/ddocs"
+    },
+    "replicaIndex": false,
+    "autoCompactionSettings": {
+      "parallelDBAndViewCompaction": true,
+      "allowedTimePeriod": {
+        "fromHour": 2,
+        "toHour": 6,
+        "fromMinute": 0,
+        "toMinute": 30,
+        "abortOutside": true
+      },
+      "databaseFragmentationThreshold": {
+        "percentage": 30,
+        "size": "undefined"
+      },
+      "viewFragmentationThreshold": {
+        "percentage": "undefined",
+        "size": 314572800
+      }
+    },
+    "purgeInterval": 3,
+    "vBucketServerMap": {
+      "hashAlgorithm": "CRC",
+      "numReplicas": 1,
+      "serverList": [
+        "127.0.0.1:11210"
+      ],
+    },
+    "replicaNumber": 1,
+    "threadsNumber": 8,
+    "quota": {
+      "ram": 1073741824,
+      "rawRAM": 1073741824
+    },
+    "basicStats": {
+      "quotaPercentUsed": 0.5730926990509033,
+      "opsPerSec": 0,
+      "diskFetches": 0,
+      "itemCount": 0,
+      "diskUsed": 292970,
+      "dataUsed": 265088,
+      "memUsed": 6153536,
+      "vbActiveNumNonResident": 0
+    },
+    "evictionPolicy": "fullEviction",
+    "durabilityMinLevel": "none",
+    "conflictResolutionType": "seqno",
+    "bucketCapabilitiesVer": "",
+    "bucketCapabilities": [
+      "durableWrite",
+      "tombstonedUserXAttrs",
+      "couchapi",
+      "dcp",
+      "cbhello",
+      "touch",
+      "cccp",
+      "xdcrCheckpointing",
+      "nodesExt",
+      "xattr"
+    ]
+  }
+]%
