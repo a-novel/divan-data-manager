@@ -76,7 +76,7 @@ func getDataCBQ(username, password, url, selector string, ptr interface{}) error
 
 	err = json.Unmarshal(stdout, ptr)
 	if err != nil {
-		return err
+		return fmt.Errorf("%s\noriginal response : %s", err.Error(), stdout)
 	}
 
 	return nil
