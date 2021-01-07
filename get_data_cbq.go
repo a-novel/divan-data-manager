@@ -9,7 +9,7 @@ import (
 
 func GetNamespacesData(username, password, url string) ([]*divan_types.NamespaceData, error) {
 	if url == "" {
-		url = "127.0.0.1:8091"
+		url = "127.0.0.1"
 	}
 
 	var output struct {
@@ -25,7 +25,7 @@ func GetNamespacesData(username, password, url string) ([]*divan_types.Namespace
 
 func GetKeyspacesData(username, password, url string) ([]*divan_types.KeyspaceData, error) {
 	if url == "" {
-		url = "127.0.0.1:8091"
+		url = "127.0.0.1"
 	}
 
 	var output struct {
@@ -41,7 +41,7 @@ func GetKeyspacesData(username, password, url string) ([]*divan_types.KeyspaceDa
 
 func GetIndexesData(username, password, url string) ([]*divan_types.IndexData, error) {
 	if url == "" {
-		url = "127.0.0.1:8091"
+		url = "127.0.0.1"
 	}
 
 	var output struct {
