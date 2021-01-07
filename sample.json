@@ -1,0 +1,184 @@
+{
+  "requestID": "ea41aa08-0baf-4219-9a6b-505b3cfff179",
+  "signature": {
+    "*": "*"
+  },
+  "results": [
+    {
+      "indexes": {
+        "condition": "(`_type` = \"User\")",
+        "datastore_id": "http://127.0.0.1:8091",
+        "id": "e8f495c87363ee3",
+        "index_key": [
+          "`name`"
+        ],
+        "keyspace_id": "travel-sample",
+        "name": "def_name_type",
+        "namespace_id": "default",
+        "state": "online",
+        "using": "gsi"
+      }
+    },
+    {
+      "indexes": {
+        "datastore_id": "http://127.0.0.1:8091",
+        "id": "b2870434da4a90c",
+        "index_key": [
+          "array (`s`.`utc`) for `s` in `schedule` end"
+        ],
+        "keyspace_id": "travel-sample",
+        "name": "def_schedule_utc",
+        "namespace_id": "default",
+        "state": "online",
+        "using": "gsi"
+      }
+    },
+    {
+      "indexes": {
+        "datastore_id": "http://127.0.0.1:8091",
+        "id": "a95900b2cd7dfcb5",
+        "index_key": [],
+        "is_primary": true,
+        "keyspace_id": "beer-sample",
+        "name": "beer_primary",
+        "namespace_id": "default",
+        "state": "online",
+        "using": "gsi"
+      }
+    },
+    {
+      "indexes": {
+        "datastore_id": "http://127.0.0.1:8091",
+        "id": "7bb4331e84d5851e",
+        "index_key": [
+          "`sourceairport`"
+        ],
+        "keyspace_id": "travel-sample",
+        "name": "def_sourceairport",
+        "namespace_id": "default",
+        "state": "online",
+        "using": "gsi"
+      }
+    },
+    {
+      "indexes": {
+        "datastore_id": "http://127.0.0.1:8091",
+        "id": "c398a5c62588c507",
+        "index_key": [
+          "`icao`"
+        ],
+        "keyspace_id": "travel-sample",
+        "name": "def_icao",
+        "namespace_id": "default",
+        "state": "online",
+        "using": "gsi"
+      }
+    },
+    {
+      "indexes": {
+        "datastore_id": "http://127.0.0.1:8091",
+        "id": "a4e9c27c59340501",
+        "index_key": [
+          "`faa`"
+        ],
+        "keyspace_id": "travel-sample",
+        "name": "def_faa",
+        "namespace_id": "default",
+        "state": "online",
+        "using": "gsi"
+      }
+    },
+    {
+      "indexes": {
+        "datastore_id": "http://127.0.0.1:8091",
+        "id": "792125f94bacaeb9",
+        "index_key": [],
+        "is_primary": true,
+        "keyspace_id": "gamesim-sample",
+        "name": "gamesim_primary",
+        "namespace_id": "default",
+        "state": "online",
+        "using": "gsi"
+      }
+    },
+    {
+      "indexes": {
+        "datastore_id": "http://127.0.0.1:8091",
+        "id": "47e40d573dc14098",
+        "index_key": [
+          "`type`"
+        ],
+        "keyspace_id": "travel-sample",
+        "name": "def_type",
+        "namespace_id": "default",
+        "state": "online",
+        "using": "gsi"
+      }
+    },
+    {
+      "indexes": {
+        "datastore_id": "http://127.0.0.1:8091",
+        "id": "1e1d8f9db9bbd997",
+        "index_key": [
+          "`airportname`"
+        ],
+        "keyspace_id": "travel-sample",
+        "name": "def_airportname",
+        "namespace_id": "default",
+        "state": "online",
+        "using": "gsi"
+      }
+    },
+    {
+      "indexes": {
+        "datastore_id": "http://127.0.0.1:8091",
+        "id": "37f4f8d101b1bf84",
+        "index_key": [
+          "`city`"
+        ],
+        "keyspace_id": "travel-sample",
+        "name": "def_city",
+        "namespace_id": "default",
+        "state": "online",
+        "using": "gsi"
+      }
+    },
+    {
+      "indexes": {
+        "condition": "(`type` = \"route\")",
+        "datastore_id": "http://127.0.0.1:8091",
+        "id": "9a1dce5ef1bea29e",
+        "index_key": [
+          "`sourceairport`",
+          "`destinationairport`",
+          "(distinct (array (`v`.`day`) for `v` in `schedule` end))"
+        ],
+        "keyspace_id": "travel-sample",
+        "name": "def_route_src_dst_day",
+        "namespace_id": "default",
+        "state": "online",
+        "using": "gsi"
+      }
+    },
+    {
+      "indexes": {
+        "datastore_id": "http://127.0.0.1:8091",
+        "id": "e008a1eeea3987f5",
+        "index_key": [],
+        "is_primary": true,
+        "keyspace_id": "travel-sample",
+        "name": "def_primary",
+        "namespace_id": "default",
+        "state": "online",
+        "using": "gsi"
+      }
+    }
+  ],
+  "status": "success",
+  "metrics": {
+    "elapsedTime": "56.830102ms",
+    "executionTime": "56.793499ms",
+    "resultCount": 12,
+    "resultSize": 4737
+  }
+}

@@ -20,7 +20,7 @@ type AutoCompactionTimePeriod struct {
 	FromMinute   uint64 `json:"fromMinute"`
 	ToHour       uint64 `json:"toHour"`
 	ToMinute     uint64 `json:"toMinute"`
-	AbortOutside bool `json:"abortOutside"`
+	AbortOutside bool   `json:"abortOutside"`
 }
 
 type Threshold struct {

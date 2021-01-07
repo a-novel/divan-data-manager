@@ -5,7 +5,7 @@ import (
 	"github.com/a-novel/divan-data-manager/types"
 )
 
-func (bd *BucketData) GetAutocompaction() error {
+func (bd *divan_types.BucketData) GetAutocompaction() error {
 	if bd.AutoCompactionSettings != nil {
 		marshalled, err := json.Marshal(bd.AutoCompactionSettings)
 		if err != nil {
