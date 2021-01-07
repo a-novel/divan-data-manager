@@ -76,7 +76,10 @@ func getDataCBQ(username, password, url, selector string, ptr interface{}) error
 
 	err = json.Unmarshal(stdout, ptr)
 	if err != nil {
-		return fmt.Errorf("%s\noriginal response : %s", err.Error(), stdout)
+		return fmt.Errorf("%s\ncommand : %s\noriginal response : %s", err.Error(), fmt.Sprintf(
+			"%s -engine=\"http://%s:%s@%s\" --script=\"SELECT * FROM %s\"",
+			cliPath, username, password, url, selector,
+		), stdout)
 	}
 
 	return nil
