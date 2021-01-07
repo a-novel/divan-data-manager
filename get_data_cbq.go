@@ -41,7 +41,7 @@ func GetKeyspacesData(username, password, url string) ([]*divan_types.KeyspaceDa
 
 func GetIndexesData(username, password, url string) ([]*divan_types.IndexData, error) {
 	if url == "" {
-		url = "127.0.0.1:8093"
+		url = "127.0.0.1:8091"
 	}
 
 	var output struct {
@@ -64,8 +64,8 @@ func getDataCBQ(username, password, url, selector string, ptr interface{}) error
 	cmd := exec.Command(
 		"sh", "-c",
 		fmt.Sprintf(
-			"%s -e=http://%s -u=\"%s\" -p=\"%s\" --script=\"SELECT * FROM %s\"",
-			cliPath, url, username, password, selector,
+			"%s -engine=\"http://%s:%s@%s\" --script=\"SELECT * FROM %s\"",
+			cliPath, username, password, url, selector,
 		),
 	)
 
