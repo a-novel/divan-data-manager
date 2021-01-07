@@ -52,5 +52,3 @@ func getDataCurl(username, password, url string, ptr interface{}) error {
 
 	return nil
 }
-
-

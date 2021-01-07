@@ -9,6 +9,6 @@ type IndexData struct {
 	KeyspaceID  string   `json:"keyspace_id"`
 	NamespaceID string   `json:"namespace_id"`
 	DatastoreID string   `json:"datastore_id"`
-	Condition string `json:"condition"`
-	IsPrimary bool `json:"is_primary"`
+	Condition   string   `json:"condition"`
+	IsPrimary   bool     `json:"is_primary"`
 }
