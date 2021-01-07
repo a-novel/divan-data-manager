@@ -1,18 +1,17 @@
-package divan_data_manager
+package divan_types
 
 import (
 	"encoding/json"
-	"github.com/a-novel/divan-data-manager/types"
 )
 
-func (bd *divan_types.BucketData) GetAutocompaction() error {
+func (bd *BucketData) GetAutocompaction() error {
 	if bd.AutoCompactionSettings != nil {
 		marshalled, err := json.Marshal(bd.AutoCompactionSettings)
 		if err != nil {
 			return err
 		}
 
-		var output divan_types.AutoCompactionSettings
+		var output AutoCompactionSettings
 		if err := json.Unmarshal(marshalled, &output); err != nil {
 			return err
 		}
