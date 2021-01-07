@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	divan_types "github.com/a-novel/divan-data-manager/types"
+	"os"
 	"os/exec"
 )
 
@@ -68,6 +69,9 @@ func getDataCBQ(username, password, url, selector string, ptr interface{}) error
 			cliPath, username, password, url, selector,
 		),
 	)
+
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
 
 	stdout, err := cmd.Output()
 	if err != nil {
