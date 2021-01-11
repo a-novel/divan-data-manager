@@ -33,7 +33,7 @@ type BucketData struct {
 }
 
 func (bd *BucketData) GetAutocompaction() error {
-	if bd.AutoCompactionSettings != nil {
+	if bd.AutoCompactionSettings != nil && bd.AutoCompactionSettings != false {
 		marshalled, err := json.Marshal(bd.AutoCompactionSettings)
 		if err != nil {
 			return err
