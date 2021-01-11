@@ -1,5 +1,7 @@
 package divan_types
 
+import "encoding/json"
+
 type ClusterData struct {
 	Name                    string             `json:"name"`
 	Nodes                   []Node             `json:"nodes"`
@@ -30,4 +32,23 @@ type ClusterData struct {
 	VisualSettingsUri       string             `json:"visualSettingsUri"`
 	StorageTotals           StorageTotals      `json:"storageTotals"`
 	AutoCompactionSettingsD *AutoCompactionSettings
+}
+
+func (c *ClusterData) GetAutocompaction() error {
+	if c.AutoCompactionSettings != nil {
+		marshalled, err := json.Marshal(c.AutoCompactionSettings)
+		if err != nil {
+			return err
+		}
+
+		var output AutoCompactionSettings
+		if err := json.Unmarshal(marshalled, &output); err != nil {
+			return err
+		}
+
+		output.Parse()
+		c.AutoCompactionSettingsD = &output
+	}
+
+	return nil
 }

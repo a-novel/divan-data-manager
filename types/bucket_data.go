@@ -1,5 +1,7 @@
 package divan_types
 
+import "encoding/json"
+
 type BucketData struct {
 	Name                    string           `json:"name"`
 	BucketType              string           `json:"bucketType"`
@@ -28,4 +30,23 @@ type BucketData struct {
 	ReplicaIndex            bool             `json:"replicaIndex"`
 	AutoCompactionSettings  interface{}      `json:"autoCompactionSettings"`
 	AutoCompactionSettingsD *AutoCompactionSettings
+}
+
+func (bd *BucketData) GetAutocompaction() error {
+	if bd.AutoCompactionSettings != nil {
+		marshalled, err := json.Marshal(bd.AutoCompactionSettings)
+		if err != nil {
+			return err
+		}
+
+		var output AutoCompactionSettings
+		if err := json.Unmarshal(marshalled, &output); err != nil {
+			return err
+		}
+
+		output.Parse()
+		bd.AutoCompactionSettingsD = &output
+	}
+
+	return nil
 }
